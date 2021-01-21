@@ -1,0 +1,178 @@
+:root{
+    font-size: 62.5%;
+}
+
+.todo-container {
+    display: flex;
+
+}
+
+.todo-form {
+    width: 33.0rem;
+    height: 50.0rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8rem;
+    background-color: white;
+    border-radius: 2.0rem;
+    box-shadow: 1.0rem 1.0rem 1.0rem black;
+}
+
+.todo-form-heading {
+    text-align: center;
+    background-color: rgb(179, 65, 179);
+    font-size: 2.2rem;
+    font-weight: 600;
+    font-family: cursive;
+}
+
+.item-list {
+    width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+
+.todo-input {
+    width:12rem;
+    border: none;
+    border-bottom: .3rem solid rgb(179, 65, 179);
+    margin: 0 .5rem .1rem 1.0rem;
+}
+
+.todo-input:focus {
+    outline: none;
+}
+
+.todo-input::placeholder {
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 500;
+    font-family: Times, serif;
+    word-spacing: .8rem;
+}
+
+.todo-add-button {
+    border-radius: 50rem;
+    border: none;
+    zoom: 2;
+    font-size: 1.7rem;
+    background-color: rgb(168, 86, 168);
+    font-weight: 500;
+    transform: translateX(-5%);
+    transition: all 0.2s;
+}
+
+.todo-add-button:focus {
+    outline: none;
+}
+
+.todo-add-button:active {
+    transform: translate(-5%,.5rem);
+}
+
+.todo-add-button:hover {
+    cursor: pointer;
+    background-color: rgba(97, 97, 240,1);
+}
+
+.todo-list {
+    width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.todo-list-container {
+    width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.todo-list-checkbox {
+    zoom: 1.3;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + .todo-input-list {
+    text-decoration: line-through;
+    color: #888;
+
+}
+
+.todo-input-list {
+    margin:0 .2rem 1.5rem .2rem;
+    border: none;
+    width: 15rem;
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif, Courier, monospace, serif;
+    border-bottom: .1rem solid black;
+}
+
+.todo-input-list:focus {
+    outline: none;
+}
+
+.emptyValue-error-message {
+    color: red;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 1.5rem;
+}
+
+.emptyValue-error-message-container{
+height: 5px;
+}
+
+.todo {
+    background-color: red;
+    margin: 1.0rem;
+}
+
+.emptyTodo-list-message {
+    color: rgb(104, 0, 179);
+    width: 22rem;
+    margin-top: 13rem;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 2.2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.delete-btn,
+.edit-btn {
+    border: none;
+    zoom: 2;
+    cursor: pointer;
+}
+
+.edit-btn {
+    color: green;
+}
+
+.delete-btn {
+    margin-right: .5rem;
+    color: red;
+}
+
+.todo-logout-button {
+    margin-left: 13.0rem;
+    padding: .6rem 1.0rem;
+    text-transform: uppercase;
+    border-radius: .5rem;
+    border: none;
+    background-color: rgb(131, 72, 131);
+    font-weight: 600;
+    color: white;
+    transform: translateX(-10%);
+    transition: 0.2s all;
+}
+
+.todo-logout-button:hover {
+    background-color: rgb(243, 49, 243);
+    font-weight: 600;
+    color: black;
+}
+
+.todo-logout-button:active {
+    transform: translate(-10%, .3rem);
+}
